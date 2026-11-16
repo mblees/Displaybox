@@ -10,6 +10,7 @@
 #define ENABLE_WEB_SERVER 0
 #endif
 
+#include <WiFi.h>      // seit Arduino-ESP32 3.x nicht mehr ueber WebServer.h
 #include <WebServer.h>
 #include "led_controller.h"
 
