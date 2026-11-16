@@ -17,7 +17,9 @@
 |                      | 3 * M3 Screw               | €0,10                    |
 | **Sum**              |                            | €27,51                   |
 
-- Overtune PETG: 15,99€ pro 1kg
-- ESP32-Devkit-V1: 42,99€ for 10
-- WS2812 LED: 22,99€ for 300
-- KY040 Rotary Encoder: 9,59€ for 5
+Unit prices are derived from these bulk prices:
+
+- Overture PETG: €15,99 per 1 kg
+- ESP32-Devkit-V1: €42,99 for 10
+- WS2812 LED: €22,99 for 300
+- KY040 Rotary Encoder: €9,59 for 5
