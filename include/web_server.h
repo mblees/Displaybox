@@ -3,6 +3,13 @@
 
 #include <Arduino.h>
 
+// WLAN-Access-Point mit Weboberflaeche zur Farbwahl. Standardmaessig aus;
+// aktivieren per build_flags in platformio.ini (-D ENABLE_WEB_SERVER=1) und
+// include/secrets.h aus include/secrets_example.h anlegen.
+#ifndef ENABLE_WEB_SERVER
+#define ENABLE_WEB_SERVER 0
+#endif
+
 #include <WebServer.h>
 #include "led_controller.h"
 

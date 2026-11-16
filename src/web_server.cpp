@@ -1,5 +1,7 @@
 #include "web_server.h"
 
+#if ENABLE_WEB_SERVER
+
 // Zugangsdaten des Access Points liegen in include/secrets.h (nicht im Repo).
 // Vorlage: include/secrets_example.h -> nach include/secrets.h kopieren und ausfuellen.
 #if __has_include("secrets.h")
@@ -99,3 +101,5 @@ void handleRainbow()
     set_mode(4);
     handleRoot();
 }
+
+#endif // ENABLE_WEB_SERVER
