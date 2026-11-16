@@ -1,7 +1,15 @@
 #include "web_server.h"
 
-const char *ssid = "HarleyAnzeige";
-const char *password = "***REMOVED***";
+// Zugangsdaten des Access Points liegen in include/secrets.h (nicht im Repo).
+// Vorlage: include/secrets_example.h -> nach include/secrets.h kopieren und ausfuellen.
+#if __has_include("secrets.h")
+#include "secrets.h"
+#else
+#error "include/secrets.h fehlt: include/secrets_example.h nach include/secrets.h kopieren und ausfuellen."
+#endif
+
+const char *ssid = AP_SSID;
+const char *password = AP_PASSWORD;
 
 IPAddress local_IP(192, 168, 1, 1); // Set your desired IP address here
 IPAddress gateway(192, 168, 1, 1);  // Set your gateway IP address here
