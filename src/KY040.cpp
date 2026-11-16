@@ -3,7 +3,7 @@
 // Globale Variablen zum Speichern des Zustands
 volatile int encoderPos = 187;
 int lastClkState;
-int buttonState;
+int buttonState = HIGH;     // entprellter Zustand, HIGH = losgelassen (Pull-up)
 int lastButtonState = HIGH;
 unsigned long lastDebounceTime = 0;
 unsigned long debounceDelay = 50; // Entprellzeit

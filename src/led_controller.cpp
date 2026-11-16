@@ -86,14 +86,10 @@ uint32_t Wheel(byte WheelPos)
 
 void set_mode(uint8_t new_mode)
 {
-    if (mode < 4)
-    {
-        mode = new_mode;
-    }
-    else
-    {
-        mode = 0;
-    }
+    // Gueltig sind 0..4 (4 = Regenbogen); alles andere faellt auf 0 zurueck.
+    // Geprueft wird der neue Modus - so ist set_mode(4) wiederholt aufrufbar,
+    // ohne zwischen Regenbogen und Orange hin- und herzuspringen.
+    mode = (new_mode <= 4) ? new_mode : 0;
 }
 
 
